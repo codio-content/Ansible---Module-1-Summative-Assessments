@@ -1,0 +1,31 @@
+{
+	"type": "parsons-puzzle",
+	"taskId": "parsons-puzzle-1697336949",
+	"source": {
+		"name": "Summative Assessment #3",
+		"showName": false,
+		"instructions": "Use the following lines of code to assemble an inventory file that meets the following criteria:\n1. There are three subgroups: `webservers`, `staging`, and `production`\n1. Hosts belonging to `webservers`: `alpha.example.com`, `beta.example.com`\n1. Host belonging to `staging`: `stagehost`\n1. `webservers` is a member of `production`\n1. Hosts belonging to `production`: `one.example.com`, `two.example.com`, `three.example.com`\n\nThe inventory should be in the order listed above (i.e. `webservers` will be the first member group of `all`, `staging` will be the second, etc.)\n\nNote: Every line of code will be used. Remember, indentation matters!",
+		"initial": "all:\n  children:\n    webservers:\n      hosts:\n        alpha.example.com:\n        beta.example.com:\n    staging:\n      hosts:\n        stagehost:\n    production:\n      children:\n        webservers:\n        hosts:\n          one.example.com:\n          two.example.com:\n          three.example.com:",
+		"options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"show_feedback\":true}",
+		"grader": "1",
+		"guidance": "Below is the inventory file, properly formatted and indented, that meets the above criteria:\n```yaml-hide-clipboard\nall:\n  children:\n    webservers:\n      hosts:\n        alpha.example.com:\n        beta.example.com:\n    staging:\n      hosts:\n        stagehost:\n    production:\n      children:\n        webservers:\n        hosts:\n          one.example.com:\n          two.example.com:\n          three.example.com:\n```",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 4
+		},
+		"maxAttemptsCount": 4,
+		"points": 20,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Parsons Puzzle"
+				}
+			],
+			"files": [],
+			"opened": []
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

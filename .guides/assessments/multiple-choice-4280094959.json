@@ -1,0 +1,75 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-4280094959",
+	"source": {
+		"name": "Summative Assessment #1",
+		"showName": true,
+		"instructions": "Select each **true** statement given below:",
+		"multipleResponse": true,
+		"isRandomized": true,
+		"answers": [
+			{
+				"_id": "0dc8ead0-d1b1-da57-5e4f-49b916f52cfa",
+				"correct": true,
+				"answer": "A play is a collection of tasks that are run on a set of hosts."
+			},
+			{
+				"_id": "91e9f28a-e51b-3962-a43e-9cb1df76ea67",
+				"correct": true,
+				"answer": "A module is a reusable block of code that performs a specific action, such as copying a file or restarting a service."
+			},
+			{
+				"_id": "64b25bf6-92c7-95f2-8784-85fbd0e38faa",
+				"correct": true,
+				"answer": "A task is a single unit of work to be performed on a managed host, and it typically uses a module to perform the work."
+			},
+			{
+				"_id": "b6a69209-da9a-f481-fc4a-6786cbe2c17a",
+				"correct": true,
+				"answer": "A playbook is a collection of plays organized in a specific order to achieve a specific goal."
+			},
+			{
+				"_id": "2be1a604-3ae6-683e-ef05-3653ece5b035",
+				"correct": false,
+				"answer": "A module is a sequence of Ansible tasks that run in parallel."
+			},
+			{
+				"_id": "5ad61e3d-b5c4-e0a8-a096-bc7981343bfd",
+				"correct": false,
+				"answer": "A handler is a type of task that is executed only when a play fails."
+			},
+			{
+				"_id": "dde3638e-fdae-5a4d-f7dc-ba95bdd4e7ca",
+				"correct": false,
+				"answer": "The inventory is a file that contains a list of control nodes."
+			},
+			{
+				"_id": "c710cbbf-c52d-c7a3-e2ac-20b19d433eb6",
+				"correct": false,
+				"answer": "A task is a set of instructions that is executed by a playbook."
+			}
+		],
+		"guidance": " - A play is a collection of tasks that are run on a set of hosts.\n - A module is a reusable block of code that performs a specific action, such as copying a file or restarting a service.\n - A task is a single unit of work to be performed on a managed host, and it typically uses a module to perform the work.\n - A playbook is a collection of plays organized in a specific order to achieve a specific goal.\n - A handler is a special type of task that is only executed when a task in the same play notifies it. \n - The inventory file is used to define the managed nodes (target hosts) and groups that Ansible will operate on.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 3
+		},
+		"maxAttemptsCount": 3,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": true,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				}
+			],
+			"files": [],
+			"opened": []
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

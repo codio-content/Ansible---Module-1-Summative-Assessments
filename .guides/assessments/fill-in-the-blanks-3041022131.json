@@ -1,0 +1,68 @@
+{
+	"type": "fill-in-the-blanks",
+	"taskId": "fill-in-the-blanks-3041022131",
+	"source": {
+		"name": "Summative Assessment #5",
+		"showName": false,
+		"instructions": "Fill in the blanks of the playbook shown below so that it has two plays that accomplish the following\n\nThe first play:\n - The first task should test the connectivity to all hosts in the inventory\n - The second task should print a message to the console indicated that all hosts responded to the ping\n\nThe second play:\n - A section that will only execute if one of the previous tasks fail. It should print a message that one or more tasks failed.\n\nNote: when specifying a module, please use the full name (i.e. ansbile.builtin.modulename)",
+		"showValues": false,
+		"text": "```yaml-hide-clipboard\n---\n- name: Assessment 5 playbook\n  <<<hosts>>>: <<<all>>>\n\n  <<<tasks>>>:\n    - <<<name>>>: Ping all hosts\n      <<<ansible.builtin.ping>>>:\n\n    - <<<name>>>: Print a message\n      <<<ansible.builtin.debug>>>:\n        msg: \"All hosts responded to ping\"\n\n  <<<rescue>>>:\n    - name: Handle failed tasks\n      <<<ansible.builtin.debug>>>:\n        msg: \"One or more tasks failed\"\n```",
+		"distractors": "",
+		"guidance": "Below is the correct playbook:\n```yaml-hide-clipboard\n---\n- name: Assessment 5 playbook\n  hosts: all\n\n  tasks:\n    - name: Ping all hosts\n      ansible.builtin.ping:\n\n    - name: Print a message\n      ansible.builtin.debug:\n        msg: \"All hosts responded to ping\"\n\n  rescue:\n    - name: Handle failed tasks\n      ansible.builtin.debug:\n        msg: \"One or more tasks failed\"\n```",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 3
+		},
+		"maxAttemptsCount": 3,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"arePartialPointsAllowed": true,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Fill in the Blanks"
+				}
+			],
+			"files": [],
+			"opened": []
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": "",
+		"tokens": {
+			"blank": [
+				"hosts",
+				"all",
+				"tasks",
+				"name",
+				"ansible.builtin.ping",
+				"name",
+				"ansible.builtin.debug",
+				"rescue",
+				"ansible.builtin.debug"
+			],
+			"text": [
+				"```yaml-hide-clipboard\n---\n- name: Assessment 5 playbook\n  ",
+				0,
+				": ",
+				0,
+				"\n\n  ",
+				0,
+				":\n    - ",
+				0,
+				": Ping all hosts\n      ",
+				0,
+				":\n\n    - ",
+				0,
+				": Print a message\n      ",
+				0,
+				":\n        msg: \"All hosts responded to ping\"\n\n  ",
+				0,
+				":\n    - name: Handle failed tasks\n      ",
+				0,
+				":\n        msg: \"One or more tasks failed\"\n```"
+			],
+			"regexPositions": []
+		}
+	}
+}

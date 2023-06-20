@@ -1,0 +1,59 @@
+{
+	"type": "fill-in-the-blanks",
+	"taskId": "fill-in-the-blanks-3452556148",
+	"source": {
+		"name": "Summative Assessment #2",
+		"showName": false,
+		"instructions": "**Complete the sentences below:**\n\n**Hint: not all answer choices will be used.**",
+		"showValues": true,
+		"text": "After running an Ansible playbook, the <<<play recap>>> provides a summary of the tasks that were completed, the time taken to complete each task, and whether each task was successful or failed.\n\nBy default, Ansible uses the <<<SSH connection>>> protocol to connect to managed nodes.\n\n<<<complex data structures>>> are common in Ansible playbooks and can be created by combining lists and dictionaries.\n\nIn Ansible, a <<<handler>>> is a special task that is only run when triggered by another task.\n\n<<<Ansible lint>>> is a tool for checking the style and standards of Ansible playbooks.\n\nPieces of information gathered from managed nodes, in a task run implicitly, that can be used in playbooks are called <<<Ansible facts>>>.",
+		"distractors": "force handler\nmagic variables\nplaybook",
+		"guidance": " - After running an Ansible playbook, the play recap provides a summary of the tasks that were completed, the time taken to complete each task, and whether each task was successful or failed.\n - By default, Ansible uses the SSH protocol to connect to managed nodes.\n - Complex data structures are common in Ansible playbooks and can be created by combining lists and dictionaries\n - Handlers are special tasks that only run when triggered by another task.\n - Ansible lint is a tool for checking the style and standards of Ansible playbooks.\n - Ansible Facts are pieces of information gathered from managed nodes that can be used in playbooks.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 3
+		},
+		"maxAttemptsCount": 3,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"arePartialPointsAllowed": true,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Fill in the Blanks"
+				}
+			],
+			"files": [],
+			"opened": []
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": "",
+		"tokens": {
+			"blank": [
+				"play recap",
+				"SSH connection",
+				"complex data structures",
+				"handler",
+				"Ansible lint",
+				"Ansible facts"
+			],
+			"text": [
+				"After running an Ansible playbook, the ",
+				0,
+				" provides a summary of the tasks that were completed, the time taken to complete each task, and whether each task was successful or failed.\n\nBy default, Ansible uses the ",
+				0,
+				" protocol to connect to managed nodes.\n\n",
+				0,
+				" are common in Ansible playbooks and can be created by combining lists and dictionaries.\n\nIn Ansible, a ",
+				0,
+				" is a special task that is only run when triggered by another task.\n\n",
+				0,
+				" is a tool for checking the style and standards of Ansible playbooks.\n\nPieces of information gathered from managed nodes, in a task run implicitly, that can be used in playbooks are called ",
+				0,
+				"."
+			],
+			"regexPositions": []
+		}
+	}
+}

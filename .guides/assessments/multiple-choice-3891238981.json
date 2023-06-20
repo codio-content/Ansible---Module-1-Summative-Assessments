@@ -1,0 +1,55 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-3891238981",
+	"source": {
+		"name": "Summative Assessment #4",
+		"showName": false,
+		"instructions": "Choose the Ansible playbook that correctly outputs the version of Linux distribution used on the managed node (localhost) using `ansible.builtin.debug`.",
+		"multipleResponse": false,
+		"isRandomized": true,
+		"answers": [
+			{
+				"_id": "8f33d9c1-0288-912c-58a8-803cc40b98d0",
+				"correct": true,
+				"answer": "```yaml-hide-clipboard\n---\n- name: Get Linux distribution version\n  hosts: localhost\n  tasks:\n    - name: Display Linux distribution version\n      ansible.builtin.debug:\n        var: ansible_lsb\n```"
+			},
+			{
+				"_id": "d09a1445-0fe8-b84a-b603-ba1a8c49dab8",
+				"correct": false,
+				"answer": "```yaml-hide-clipboard\n---\n- name: Get Linux distribution version\n  hosts: localhost\n  gather_facts: true\n  tasks:\n    - name: Display Linux distribution version\n      ansible.builtin.debug:\n        var: ansible_hostname\n```"
+			},
+			{
+				"_id": "2b4f7694-bc48-498f-660d-c9f9d625a997",
+				"correct": false,
+				"answer": "```yaml-hide-clipboard\n---\n- name: Get Linux distribution version\n  hosts: webservers\n  gather_facts: false\n  tasks:\n    - name: Display Linux distribution version\n      ansible.builtin.debug:\n        var: ansible_hostname\n```"
+			},
+			{
+				"_id": "b91fac2f-4bb7-9ed0-223c-4e056e031e45",
+				"correct": false,
+				"answer": "```yaml-hide-clipboard\n---\n- name: Get Linux distribution version\n  hosts: webservers\n  tasks:\n    - name: Display Linux distribution version\n      ansible.builtin.debug:\n        var: ansible_lsb\n```"
+			}
+		],
+		"guidance": "The `host: localhost` must be specified because we are interested in the control node rather than `webservers`, a group of managed nodes\nWe could include `gather_facts: true` in our playbook, but since this task runs implicitly it is not required. However, including `gather_facts: false` would not gather information for `ansible_lsb`.\nThe information we are interested in is included in `ansible_lsb`, not `ansible_hostname`.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 3
+		},
+		"maxAttemptsCount": 3,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": false,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				}
+			],
+			"files": [],
+			"opened": []
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}
